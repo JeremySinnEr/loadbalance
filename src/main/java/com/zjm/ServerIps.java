@@ -11,6 +11,7 @@ public class ServerIps {
 
     // IP列表
     public static final List<String> LIST = new ArrayList<>();
+
     static {
         LIST.add("192.168.0.1");
         LIST.add("192.168.0.2");

@@ -64,4 +64,5 @@ public class ServerIps {
         ACTIVITY_LIST.put("192.168.0.9", 7);
         ACTIVITY_LIST.put("192.168.0.10", 3);
     }
+
 }

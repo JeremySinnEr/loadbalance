@@ -66,7 +66,7 @@ public class LeastActiveLoadBalance {
                         randomPos = randomPos - entry.getValue();
                     }
                 }
-                return (String) weightMap.keySet().toArray()[randomPos];
+                return (String) weightMap.keySet().toArray()[new Random().nextInt(weightMap.size())];
 
             } else { // 只有一个，直接获取
                  return minActivityIps.get(0);

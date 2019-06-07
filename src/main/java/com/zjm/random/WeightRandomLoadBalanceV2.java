@@ -51,7 +51,7 @@ public class WeightRandomLoadBalanceV2 {
                 randomPos = randomPos - entry.getValue();
             }
         }
-        return (String) ServerIps.WEIGHT_LIST.keySet().toArray()[randomPos];
+        return (String) ServerIps.WEIGHT_LIST.keySet().toArray()[new Random().nextInt(ServerIps.WEIGHT_LIST.size())];
     }
 
 }
